@@ -26,13 +26,37 @@
     </nav>
     <div class="content-wrapper">
       <h1>Free Coding Resources</h1>
-      Categories:
-      HTML
-      CSS 
-      JAVASCRIPT
-      PORTFOLIO PROJECTS
-      ASSETS
-      CAREER DEVELOPMENT
+      <!-- Control buttons -->
+      <div id="myBtnContainer">
+        <button class="btn active" onclick="filterSelection('all')">Show all</button>
+        <button class="btn" onclick="filterSelection('html')">HTML</button>
+        <button class="btn" onclick="filterSelection('css')">CSS</button>
+        <button class="btn" onclick="filterSelection('js')">JavaScript</button>
+        <button class="btn" onclick="filterSelection('portfolio')">Portfolio Projects</button>
+        <button class="btn" onclick="filterSelection('assets')">Assets</button>
+        <button class="btn" onclick="filterSelection('career')">Career Development</button>
+      </div>
+      <!-- The filterable elements -->
+      <div class="container">
+        <div class="filterResource html">
+          HTML resource
+        </div>
+        <div class="filterResource css">
+          CSS resource
+        </div>
+        <div class="filterResource js">
+          JavaScript Resource
+        </div>
+        <div class="filterResource portfolio">
+          Portfolio Resource
+        </div>
+        <div class="filterResource assets">
+          Assets Resource
+        </div>
+        <div class="filterResource career">
+          Career Development Resource
+        </div>
+      </div>
     </div>
   </header>
   <main>

@@ -11,66 +11,78 @@
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="css/main.scss">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+  integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Barlow+Condensed:wght@300;400;600;700&family=Fredoka+One&display=swap" rel="stylesheet">
   <meta name="theme-color" content="#fafafa">
 </head>
 
 <body>
   <header>
-    <nav>
-      <ul>
-        <li>Home</li>
-        <li>About</li>
-        <li>Study Guide</li>
-        <li>Support</li>
-      </ul>
-    </nav>
     <div class="content-wrapper">
-      <h1>Free Coding Resources</h1>
-      <!-- Control buttons -->
-      <div id="myBtnContainer">
-        <button class="btn active" onclick="filterSelection('all')">Show all</button>
-        <button class="btn" onclick="filterSelection('html')">HTML</button>
-        <button class="btn" onclick="filterSelection('css')">CSS</button>
-        <button class="btn" onclick="filterSelection('js')">JavaScript</button>
-        <button class="btn" onclick="filterSelection('portfolio')">Portfolio Projects</button>
-        <button class="btn" onclick="filterSelection('assets')">Assets</button>
-        <button class="btn" onclick="filterSelection('career')">Career Development</button>
+      <div class="logo">
+        <i class="fas fa-laptop-code fa-2x"></i>
       </div>
-      <!-- The filterable elements -->
-      <div class="container">
-        <div class="filterResource html">
-          HTML resource
-        </div>
-        <div class="filterResource css">
-          CSS resource
-        </div>
-        <div class="filterResource js">
-          JavaScript Resource
-        </div>
-        <div class="filterResource portfolio">
-          Portfolio Resource
-        </div>
-        <div class="filterResource assets">
-          Assets Resource
-        </div>
-        <div class="filterResource career">
-          Career Development Resource
-        </div>
-      </div>
+      <nav>
+        <ul>
+          <li><a href="index.html" class="active-page">Home</a></li>
+          <li><a href="about/index.html">About</a></li>
+          <li><a href="study-guides/index.html">Study Guides</a></li>
+        </ul>
+      </nav>
     </div>
   </header>
   <main>
+    <section id="hero">
+      <div class="content-wrapper">
+        <h1>Free Front End Resources</h1>
+        <h2>For an Accessible <span>Tech Education</span></h2>
+      </div>
+    </section>
     <section id="resources">
       <div class="content-wrapper">
+        <!-- Control buttons -->
+        <div id="myBtnContainer">
+          <button class="btn active" onclick="filterSelection('all')">Show all</button>
+          <button class="btn" onclick="filterSelection('html')">HTML</button>
+          <button class="btn" onclick="filterSelection('css')">CSS</button>
+          <button class="btn" onclick="filterSelection('js')">JavaScript</button>
+          <button class="btn" onclick="filterSelection('portfolio')">Portfolio Projects</button>
+          <button class="btn" onclick="filterSelection('assets')">Assets</button>
+          <button class="btn" onclick="filterSelection('career')">Career Development</button>
+        </div>
+        <!-- The filterable elements -->
+        <div class="container">
+          <div class="filterResource html">
+            Lorem ipsum
+          </div>
+          <div class="filterResource css">
+            Lorem ipsum
+          </div>
+          <div class="filterResource js">
+            Lorem ipsum
+          </div>
+          <div class="filterResource portfolio">
+            Lorem ipsum
+          </div>
+          <div class="filterResource assets">
+            Lorem ipsum
+          </div>
+          <div class="filterResource career">
+            Lorem ipsum
+          </div>
+        </div>
       </div>
     </section>
   </main>
   <footer>
     <div class="content-wrapper">
-      <a href="https://dev.to/emmyhtml">Dev.to</a>
-      <a href="https://studioemery.com">Blog</a>
-      <a href="https://twitter.com/emmydoesit">Twitter</a>
-    </div>
+      <aside class="social-media">
+        <a href="https://dev.to/emmyhtml"><i class="far fa-file-alt"></i></a>
+        <a href="https://studioemery.com"><i class="fab fa-github-square"></i></a>
+        <a href="https://twitter.com/emmydoesit"><i class="fab fa-twitter-square"></i></a>
+      </aside>
+   </div>
   </footer>
   <script src="js/main.js"></script>
 </body>
